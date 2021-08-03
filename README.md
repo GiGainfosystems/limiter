@@ -11,7 +11,7 @@ Moreover, AWS does not give you tools to limit the bandwidth of an instance even
 
 This program will automate things for you. You can set how often you want to check how much traffic has been sent on a particular interface. This will also be accounted during restarts of your systems. Once a threshold has been reached the chosen rate will be applied via `tc` (c.f. `man tc`or https://man7.org/linux/man-pages/man8/tc.8.html). If your instance reaches the next threshold it will apply even more limiting.
 
-CAUTION: If you limit the wrong interface with a too low rate you might make your instance inaccessible even via SSH.
+**CAUTION:** If you limit the wrong interface with a too low rate you might make your instance inaccessible even via SSH.
 
 `limiter` will reset the limit at the beginning of the month.
 
