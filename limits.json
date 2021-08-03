@@ -1,0 +1,18 @@
+{"limits":[{
+    "limit": 200000000000,
+    "rate": "12mbit",
+    "burst": "48kb",
+    "latency": "70ms"
+},
+{
+    "limit": 400000000000,
+    "rate": "5mbit",
+    "burst": "20kb",
+    "latency": "70ms"
+},
+{
+    "limit": 800000000000,
+    "rate": "1mbit",
+    "burst": "4kb",
+    "latency": "70ms"
+}]}

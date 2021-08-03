@@ -1,0 +1,19 @@
+[Unit]
+Description=Limiter Service
+
+[Service]
+Type=simple
+ExecStart=/home/limiter/limiter
+Restart=on-failure
+User=limiter
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=limiter
+Environment=INTERFACE=ens5
+Environment=LOGPATH=/home/limiter/networklogger
+Environment=TIMEOUT=1500
+Environment=LIMITS=/home/limiter/limits.json
+
+
+[Install]
+WantedBy=multi-user.target
