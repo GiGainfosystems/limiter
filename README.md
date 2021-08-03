@@ -42,10 +42,10 @@ MIT license ([LICENSE](LICENSE) or https://opensource.org/licenses/MIT)
 
 ## TODO
 
-[] add `sudo`/`su` to user creation script and in code
-[] calculate burst rates
-[] improve installation script
-[] add better config, not only via environment variables
-[] set reset date via config
-[] use and combine with `iptables` to limit only specific traffic, c.f. https://www.cyberciti.biz/faq/linux-traffic-shaping-using-tc-to-control-http-traffic/
-[] many more things
+* [ ] add `sudo`/`su` to user creation script and in code
+* [ ] calculate burst rates
+* [ ] improve installation script
+* [ ] add better config, not only via environment variables
+* [ ] set reset date via config
+* [ ] use and combine with `iptables` to limit only specific traffic, c.f. https://www.cyberciti.biz/faq/linux-traffic-shaping-using-tc-to-control-http-traffic/
+* [ ] many more things
