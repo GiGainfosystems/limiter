@@ -164,11 +164,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         //println!("used\t{}", ByteSize::b(use_stats.used));
 
         let now = Utc::now();
-        if (now.month() > use_stats.last_reset.month()
-            || (now.year() > use_stats.last_reset.year() && now.month() == 1))
-            && now.day() == 1
-        {
-            println!("releasing limits");
+        if now.month() != use_stats.last_reset.month() {
+            println!("releasing limits due to reset");
+            println!("used data:\t{}", ByteSize::b(use_stats.used));
             use_stats.last_reset = now;
             use_stats.used = 0;
             orig.used = 0;
